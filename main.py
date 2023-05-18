@@ -21,7 +21,7 @@ def year_book() -> int:
     return year_book
 
 
-def pages_book(min: int=1, max: int=1000) -> int:
+def pages_book(min: int=50, max: int=1000) -> int:
     """
     Генерирует случайное количество страниц. Диапазон по умолчанию от 50 до 1000 стр.
     :param min: по умолчанию начальное значение диапазона стр. 50
