@@ -197,7 +197,7 @@ class Store:
         self.authentification()
         self.product_generator = product_generator
 
-    def set_product(self):
+    def set_product(self, product_generator):
         self.product_generator = product_generator
 
     def get_product(self):
