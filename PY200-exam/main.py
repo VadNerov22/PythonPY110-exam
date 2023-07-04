@@ -39,7 +39,7 @@ class Password:
     def get_hash(cls, password: str) -> str:
         """ Выдает хэш-значения пароля """
         if cls.is_valid(password):
-            return hashlib.md5(password.encode()).hexdigest()
+            return hashlib.sha256(password.encode()).hexdigest()
         return "Необходимо выбрать другой пароль"
 
     @staticmethod
